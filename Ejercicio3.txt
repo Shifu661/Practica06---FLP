@@ -1,0 +1,11 @@
+| value_1 año imprimir| 
+value_1 := UIManager default request: 'Ingresa un año:'.
+año := (value_1) asInteger.
+
+(año%4 = 0)
+ifTrue: [ 
+	Transcript show: 'Es un año bisiesto'
+]
+ifFalse: [ 
+	Transcript show: 'Es un año normal'
+].

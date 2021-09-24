@@ -1,0 +1,11 @@
+| value_1 num1 imprimir| 
+value_1 := UIManager default request: 'Ingresa valor:'.
+num1 := (value_1) asInteger.
+
+(num1%2 = 0)
+ifTrue: [ 
+	Transcript show: 'Es un numero par'
+]
+ifFalse: [ 
+	Transcript show: 'Es un numero impar'
+].

@@ -1,0 +1,19 @@
+| value_1 num1 value_2 num2 imprimir| 
+value_1 := UIManager default request: 'Ingresa valor:'.
+num1 := (value_1) asInteger.
+value_2 := UIManager default request: 'Ingresa valor:'.
+num2 := (value_2) asInteger.
+imprimir:=0.
+(num1 < num2)
+ifTrue: [
+	num1:=num1 +1.
+	[ num1 < num2 ] whileTrue: [ 
+		imprimir:=num1 +1.
+		Transcript show: imprimir.
+		num1 := num1 +1. 
+	].
+	
+]
+ifFalse: [ 
+	Transcript show: 'El primer numero debe ser menor que el segundo' 
+].
